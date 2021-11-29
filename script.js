@@ -7,4 +7,8 @@ function compute() {
   sum = p * r * t;
 
   document.getElementById("result").innerHTML = sum;
+  if (sum <= 0) {
+    alert("Pls enter a positive number");
+    document.getElementById("principal").focus();
+  }
 }
